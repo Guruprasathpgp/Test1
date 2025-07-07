@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    }
+
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .intro {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+
+    .intro h1 {
+      font-size: 3em;
+      font-weight: 700;
+    }
+
+    .intro p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .experience, .tools, .contact {
+      background: rgba(0, 0, 0, 0.3);
+      margin: 30px auto;
+      border-radius: 10px;
+      padding: 50px;
+      max-width: 800px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .contact button {
+      padding: 10px 30px;
+      font-size: 1em;
+      background-color: #00c6ff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #0072ff;
+    }
+  </style>
+</head>
+<body>
+  <section class="intro">
+    <h1>Hello, I'm [Your Name]</h1>
+    <p>I’m a passionate developer who loves building creative and functional digital experiences. Welcome to my portfolio!</p>
+  </section>
+
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <p>Company A - Software Engineer - 2020 to 2022<br>
+       Company B - DevOps Engineer - 2022 to 2024<br>
+       Company C - Cloud Engineer - 2024 to Present</p>
+  </section>
+
+  <section class="tools">
+    <h2>Tools & Technologies</h2>
+    <p>Java, Python, AWS, Docker, Kubernetes, Jenkins, GitHub Actions, MySQL, MongoDB, ReactJS</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
